@@ -26,29 +26,29 @@ public class myRESTController {
         return list;
     }
 
-//    @GetMapping("/employee/{id}")
-//    public Employee getEmployee(@PathVariable int id){
-//        Employee employee = employeeService.getEmployee(id);
-//        return employee;
-//    }
-//
-//    @PostMapping("/employee")
-//    public Employee addEmployee(@RequestBody Employee employee){
-//        employeeService.saveEmployee(employee);
-//        return employee;
-//    }
-//
-//
-//    @PutMapping("/employee")
-//    public Employee update(@RequestBody Employee employee){
-//        employeeService.saveEmployee(employee);
-//        return employee;
-//    }
-//    @DeleteMapping("/employee/{id}")
-//    public String delete(@PathVariable int id){
-//        employeeService.deleteEmployee(id);
-//        return "Employee N "+ id +" was deleted";
-//    }
+    @GetMapping("/employee/{id}")
+    public Employee getEmployee(@PathVariable int id){
+        Employee employee = employeeService.getEmployee(id);
+        return employee;
+    }
+
+    @PostMapping("/employee")
+    public Employee addEmployee(@RequestBody Employee employee){
+        employeeService.saveEmployee(employee);
+        return employee;
+    }
+
+
+    @PutMapping("/employee")
+    public Employee update(@RequestBody Employee employee){
+        employeeService.saveEmployee(employee);
+        return employee;
+    }
+    @DeleteMapping("/employee/{id}")
+    public String delete(@PathVariable int id){
+        employeeService.deleteEmployee(id);
+        return "Employee N "+ id +" was deleted";
+    }
 
 
 }
